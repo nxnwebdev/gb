@@ -821,4 +821,216 @@ details summary {
   line-height: 17px;
   color: #6F6E6E;
 }
+
+.cart {
+  padding-top: 96px;
+  padding-bottom: 128px;
+}
+
+.cart__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart__products {
+  width: 652px;
+}
+
+.cart__products-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 72px;
+}
+
+.cart__products-footer button,
+.cart__products-footer a {
+  color: #000;
+  padding: 17px 41px;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 1px solid #A4A4A4;
+  cursor: pointer;
+  outline: none;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.cart__product-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 306px;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+          box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+}
+
+.cart__product-item-desc {
+  width: 100%;
+  padding: 22px 22px 22px 32px;
+}
+
+.cart__product-item-desc-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart__product-item-desc-header h2 {
+  max-width: 262px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+}
+
+.cart__product-item-desc-header button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cart__product-item-desc-main ul {
+  list-style: none;
+  padding: 42px 0 62px;
+}
+
+.cart__product-item-desc-main ul li {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  padding: 6px 0;
+  color: #575757;
+}
+
+.cart__product-item-desc-main ul li .price {
+  color: #EF5B70;
+}
+
+.cart__product-item-desc-main ul li .quantity {
+  width: 50px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #656565;
+  text-align: center;
+  border: 1px solid #EAEAEA;
+  margin-left: 24px;
+}
+
+.cart__form {
+  margin-left: 128px;
+  width: 360px;
+}
+
+.cart__form fieldset {
+  border: none;
+  text-transform: uppercase;
+}
+
+.cart__form fieldset input {
+  width: 100%;
+  padding: 13px 17px;
+  margin-top: 20px;
+  text-align: left;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222;
+  outline: none;
+}
+
+.cart__form fieldset input:focus {
+  color: #B1B1B1;
+}
+
+.cart__form fieldset button {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 1px solid #A4A4A4;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 14px;
+}
+
+.cart__form-total {
+  margin-top: 57px;
+  background-color: #F5F3F3;
+  padding: 39px 43px 42px 44px;
+}
+
+.cart__form-total p {
+  text-align: right;
+  color: #4A4A4A;
+}
+
+.cart__form-total-sub {
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  margin-bottom: 12px;
+}
+
+.cart__form-total-sub span {
+  margin-left: 16px;
+}
+
+.cart__form-total-sub span:before {
+  content: '$';
+}
+
+.cart__form-total-grand {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 23px;
+  color: #222222;
+}
+
+.cart__form-total-grand span {
+  margin-left: 16px;
+  color: #F16D7F;
+  font-weight: bold;
+}
+
+.cart__form-total-grand span:before {
+  content: '$';
+}
+
+.cart__form-checkout {
+  border-top: 1px solid #E2E2E2;
+  padding: 15px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cart__form-checkout input {
+  padding: 15px 41px;
+  background-color: #F16D7F;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  outline: none;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
