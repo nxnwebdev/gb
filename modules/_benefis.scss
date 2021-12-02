@@ -1,0 +1,59 @@
+.benefits-row {
+    margin-top: 95px;
+    background: #222224;
+    max-height: 341px;
+}
+
+.benefits-wrapper {
+    max-height: 341px;
+    padding: 104px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.benefits-item {
+    max-width: 360px;
+    text-align: center;
+
+
+}
+
+.benefits-title {
+    font-size: 19.96px;
+    line-height: 24px;
+
+    /* identical to box height */
+
+    color: #FBFBFB;
+    padding-bottom: 16px;
+}
+
+.benefits-title:before {
+    content: '';
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 25px auto;
+}
+
+.benefits-item:nth-child(1):before {
+    content: url(img/car.svg);
+}
+
+.benefits-item:nth-child(2):before {
+    content: url(img/procent.svg);
+}
+
+.benefits-item:nth-child(3):before {
+    content: url(img/king.svg);
+}
+
+
+.benefits-desc {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    font-style: normal;
+    color: #FBFBFB;
+}

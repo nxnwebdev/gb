@@ -1,0 +1,25 @@
+.btn {
+    border: none;
+    outline: none;
+    padding: 16px 32px;
+    margin: 16px;
+    cursor: pointer;
+}
+
+.btn-product-cart {
+    margin-top: 63px;
+    border: 1px solid #FF6A6A;
+    background-color: #fff;
+    color: #F26376;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 57px 8px 24px;
+}
+
+.btn-product-cart:before {
+    content: url(img/cart_product.svg);
+    margin-right: 22px;
+
+
+}

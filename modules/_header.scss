@@ -1,0 +1,29 @@
+.header-row {
+    background-color: #222;
+    padding: 16px 0;
+    color: #E8E8E8;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-wrapper a {
+    text-decoration: none;
+}
+
+.header-logo {
+    margin-right: 41px;
+}
+
+.header-info-right {
+    display: flex;
+    align-items: center;
+
+}
+
+.header-info-right-img:not(:first-child) {
+    margin-left: 30px;
+}

@@ -1,0 +1,178 @@
+.registration {
+    padding: 64px 0 96px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__form {
+        width: 360px;
+
+        form {
+            ::-webkit-input-placeholder {
+                /* Chrome */
+                color: #B1B1B1;
+            }
+
+            :-ms-input-placeholder {
+                /* IE 10+ */
+                color: #B1B1B1;
+            }
+
+            ::-moz-placeholder {
+                /* Firefox 19+ */
+                color: #B1B1B1;
+            }
+
+            :-moz-placeholder {
+                /* Firefox 4 - 18 */
+                color: #B1B1B1;
+            }
+
+            fieldset {
+                border: none;
+            }
+
+            .your-name,
+            .login-details {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+
+                color: #222222;
+
+
+                input {
+                    display: block;
+                    width: 100%;
+                    margin-top: 20px;
+                    padding: 13px 17px;
+                    text-align: left;
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 16px;
+                }
+
+                button {
+                    margin-top: 59px;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 17px;
+
+                    /* identical to box height */
+
+                    color: #FFFFFF;
+                    background-color: #F16D7F;
+                    padding: 16px 29px;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                    transition: 2s ease;
+
+                    img {
+                        margin-left: 20px;
+                    }
+
+                    &:hover {
+                        transform: rotateY(360deg);
+                    }
+                }
+
+
+
+                .notification {
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 16px;
+
+                    color: #B1B1B1;
+                    margin-top: 15px;
+
+
+                }
+            }
+
+            .male {
+                margin: 31px 0 33px;
+                font-weight: 300;
+                font-size: 11px;
+                line-height: 13px;
+
+                color: #000000;
+
+                label {
+                    padding-right: 20px;
+                }
+
+                input {
+                    margin-right: 10px;
+
+                }
+            }
+        }
+    }
+
+
+    &__info {
+        width: 652px;
+
+        h2,
+        p,
+        li {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            padding-bottom: 16px;
+
+
+        }
+
+        li {
+            &:before {
+                content: url(img/v.svg);
+                width: 20px;
+                height: 16px;
+                margin-right: 22px;
+                transition: 1s ease-out;
+            }
+
+            &:hover {
+
+
+                &:before {
+                    display: inline-block;
+                    transform: scale(2);
+                    ;
+                }
+            }
+
+            &:not(:hover) {
+
+
+                &:before {
+                    display: inline-block;
+                    transform: scale(1);
+                    ;
+                }
+            }
+        }
+
+
+
+
+        h2,
+        p,
+            {
+            padding-bottom: 21px;
+
+        }
+
+
+        ul {
+            list-style-type: none;
+        }
+    }
+}

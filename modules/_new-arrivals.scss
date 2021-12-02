@@ -1,0 +1,42 @@
+.top-head-row {
+    background-color: #F8F3F4;
+}
+
+.top-head-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    text-transform: uppercase;
+}
+
+.top-head-title {
+
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+
+}
+
+.top-head-breadcrumbs {
+    display: flex;
+    list-style: none;
+}
+
+.top-head-breadcrumbs-item a {
+    padding: 0 3px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.top-head-breadcrumbs .active {
+    font-weight: bold;
+    color: #F16D7F;
+}
+
+.top-head-breadcrumbs-item:not(:last-child)::after {
+    content: ' / ';
+    padding-right: 5px;
+}

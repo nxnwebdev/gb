@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
-    <title>Shop - Catalog Page</title>
+    <title>Shop - Registration Page</title>
 </head>
 
 <body>
@@ -27,137 +27,73 @@
     <main>
         <div class="top-head-row">
             <div class="top-head-wrapper container">
-                <h2 class="top-head-title">New Arrivals</h2>
-                <nav>
-                    <ul class="top-head-breadcrumbs">
-                        <li class="top-head-breadcrumbs-item"><a href="/index.html">Home</a></li>
-                        <li class="top-head-breadcrumbs-item"><a href="#">Men</a></li>
-                        <li class="top-head-breadcrumbs-item active">New Arrivals</li>
-                    </ul>
-                </nav>
+                <h1 class="top-head-title">SHOPPING CART</h1>
+               
             </div>
         </div>
 
-        <div class="product-row">
-            <section class="product">
-                <div class="product-wrapper">
-                    <nav class="product-slide-wrapper">
-                        <button class="product-slide-btn left"><img src="img/product/slide_left.svg" alt="previous photo"></button>
-                        <button class="product-slide-btn right"><img src="img/product/slide_right.svg" alt="next photo"></button>
-                    </nav>
-                    <ul class="product-img-wrapper">
-                        <li class="product-img-item show"><img  src="img/product/1-1.png" alt="MOSCHINO CHEAP AND CHIC"></li>
-                        <li class="product-img-item hidden"><img src="img/product/1-1.png" alt="MOSCHINO CHEAP AND CHIC"></li>
-                        <li class="product-img-item hidden"><img src="img/product/1-1.png" alt="MOSCHINO CHEAP AND CHIC"></li>
-                    </ul>
-                </div>
-                <article class="product-desc-row container">
-                    <div class="product-desc-wrapper">
-                    
-                        <h2 class="product-category">WOMEN COLLECTION</h2>
-                        <h1 class="product-namme">MOSCHINO CHEAP AND CHIC</h1>
-                
-                        <p class="product-description">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
-                        <p class="product-price">$561</p>
-                        <hr>
-                    
-                            <div class="product-purcharse-wrapper">
-                                <ul class="catalog-filter-advanced">
-                                    <li class="catalog-filter-advanced-item">
-                                        
-                                        <details class="">
-                                            <summary>CHOOSE COLOR</summary>
-                                            filter1
-                                          </details>
-                                    </li>
-                                    <li class="catalog-filter-advanced-item">
-                                        <details class="">
-                                            <summary>CHOOSE SIZE</summary>
-                                            filter2
-                                          </details>
-            
-                                    </li>
-                                    <li class="catalog-filter-advanced-item">
-                                        <details class="">
-                                            <summary>QUANTITY</summary>
-                                            filter3
-                                          </details>  
-                                    </li>
-                                </ul>
-                                <button title="Add to Cart" class="btn btn-product-cart">Add to Cart</button>
-                            </div>
-                        
+<section class="registration">
+
+    <div class="registration__wrapper container">
+        <div class="registration__form">
+
+            <form action="">
+                <fieldset class="your-name">
+                    <legend>Your Name</legend>
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
                       
+                    </fieldset>
+                    <fieldset class="male">
                         
-                    </div>
-                   
-                </article>
-            </section>
-           
-         
+                        
+                       
+                        <label for="regMale"><input id="regMale" name="reg_male" type="radio"> Male</label>
+                        
+                        
+                        
+                        <label for="regFemale"><input id="regFemale" name="reg_male" type="radio"> Female</label>
+                        
+                        <div class="hidden">
+                            
+                            
+                            <label for="regOther"><input id="regOther" name="reg_male" type="radio" >Other</label>
+                        </div>
+                        
+                    </fieldset>
+
+
+                    <fieldset class="login-details">
+                        <legend>Login details</legend>
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <p class="notification">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                            <button type="submit">JOIN NOW<img src="/img/join.svg" alt="join now"></button>
+                            
+                        </fieldset>
+                  
+            </form>
+
         </div>
-        
-        <div class="top-product-row container">
+        <div class="registration__info">
+            <h2>LOYALTY HAS ITS PERKS</h2>
+            <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            <ul>
+                <li>15% off welcome offer
+                </li>
+                <li>Free shipping, returns and exchanges on all orders
 
-         
-        <div class="fetured-items-card-wrapper">
-            <article class="fetured-items-card-item">
-                <div class="fetured-items-card-img-wrapper">
-                    <div class="fetured-items-card-img-layer">
-                        <button title="Add to Cart" class="fetured-items-card-btn">Add to Cart</button>
-                    </div>
-                    <img src="img/catalog/card1.jpg" alt="ELLERY X M'O CAPSULE" class="fetured-items-card-img">
-                </div>
-                <div class="fetured-items-card-title-wrapper">
-                    <h4 class="fetured-items-card-title">ELLERY X M'O CAPSULE</h4>
-                    <p class="fetured-items-card-description">Known for her sculptural takes on traditional
-                        tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="fetured-items-card-price">$52.00</p>
-                </div>
-               
-            </article>
-            <article class="fetured-items-card-item">
-                <div class="fetured-items-card-img-wrapper">
-                    <div class="fetured-items-card-img-layer">
-                        <button title="Add to Cart" class="fetured-items-card-btn">Add to Cart</button>
-                    </div>
-                    <img src="img/catalog/card2.jpg" alt="ELLERY X M'O CAPSULE" class="fetured-items-card-img">
-                </div>
-                <div class="fetured-items-card-title-wrapper">
-                    <h4 class="fetured-items-card-title">ELLERY X M'O CAPSULE</h4>
-                    <p class="fetured-items-card-description">Known for her sculptural takes on traditional
-                        tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="fetured-items-card-price">$52.00</p>
-                </div>
-               
-            </article>
-            <article class="fetured-items-card-item">
-                <div class="fetured-items-card-img-wrapper">
-                    <div class="fetured-items-card-img-layer">
-                        <button title="Add to Cart" class="fetured-items-card-btn">Add to Cart</button>
-                    </div>
-                    <img src="img/catalog/card3.jpg" alt="ELLERY X M'O CAPSULE" class="fetured-items-card-img">
-                </div>
-                <div class="fetured-items-card-title-wrapper">
-                    <h4 class="fetured-items-card-title">ELLERY X M'O CAPSULE</h4>
-                    <p class="fetured-items-card-description">Known for her sculptural takes on traditional
-                        tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="fetured-items-card-price">$52.00</p>
-                </div>
-               
-            </article>
+                </li>
+                <li>$10 off a purchase on your birthday
 
-
-
-
-   
+                </li>
+                <li>Early access to products</li>
+                <li>Exclusive offers & rewards</li>
+            </ul>
         </div>
+    </div>
 
-    
-</div>
-
-
-
+</section>
         <section class="subscribe-row">
             <div class="subscribe-opacity">
             <div class="subscribe-wrapper container">
@@ -180,6 +116,7 @@
             </div>
         </div>
         </section>
+
     </main>
     <footer class="footer-row">
         <div class="footer-wrapper container">

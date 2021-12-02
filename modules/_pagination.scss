@@ -1,0 +1,22 @@
+.pagination {
+    display: flex;
+    list-style: none;
+    border: 1px solid rgba(235, 235, 235, 1);
+    border-radius: 5px;
+}
+
+.pagination-item {
+    padding: 12px;
+}
+
+.pagination-item a {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #C4C4C4;
+}
+
+.pagination-item.active a,
+.pagination-item a:hover {
+    color: #EF5B70;
+}
