@@ -1,18 +1,34 @@
 .catalog-header-wrapper {
 
-    padding: 50px 16px 64px;
+    padding: 50px 0px 64px;
     display: flex;
-    align-items: center;
+
 }
 
 details summary {
     list-style: none;
+}
 
+
+
+.catalog-filter-main {
+
+    width: 360px;
+    position: absolute;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 0 17px;
 
 
 }
 
+.catalog-filter-main[open] {
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    background-color: #fff;
+    top: -10px;
+    padding: 10px 17px;
 
+}
 
 .catalog-filter-main summary {
     text-transform: uppercase;
@@ -21,10 +37,74 @@ details summary {
 
 }
 
-.catalog-filter-main summary::after {
+
+
+.catalog-filter-main[open] .catalog-filter-main-title {
+
+    color: #EF5B70;
+    margin-bottom: 16px;
+}
+
+.catalog-filter-main[open] .catalog-filter-main-title:after {
+
+    content: url(img/catalog/filter_main_open.svg);
+
+}
+
+
+.catalog-filter-main-title:after {
     content: url(img/catalog/filter_main.svg);
     padding-right: 10px;
     padding-left: 5px;
+
+}
+
+.catalog-filter-main-title-cat {
+    border-left: 3px solid #EF5B70;
+    border-bottom: 1px solid #EBEBEB;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 11px;
+    margin-bottom: 18px;
+
+    /* identical to box height */
+
+    color: #EF5B70;
+}
+
+.catalog-filter-main-cat[open]>.catalog-filter-main-title-cat {
+    margin-bottom: 0;
+}
+
+.catalog-filter-main-wrapper {
+    position: relative;
+
+
+}
+
+.catalog-filter-item:first-child {
+    padding-top: 0;
+}
+
+.catalog-filter-items {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px 11px;
+}
+
+.catalog-filter-item {
+    padding: 11px 0 0 12px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    /* identical to box height */
+
+    & a {
+        color: #6F6E6E;
+    }
 
 }
 
@@ -34,15 +114,33 @@ details summary {
     list-style: none;
     cursor: pointer;
 
+
 }
-
-
 
 .catalog-filter-advanced-item summary::after {
     content: url(img/catalog/filter_advanced.svg);
     padding-right: 18px;
     padding-left: 8px;
 }
+
+
+.catalog-filter-advanced-item {
+
+
+    position: relative;
+    display: block;
+    //width: 100%;
+    //height: 100%;
+
+}
+
+
+.catalog-filter-advanced-item details {
+    //position: absolute;
+
+}
+
+
 
 .catalog-footer {
     display: flex;
