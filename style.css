@@ -807,7 +807,49 @@ details summary {
 
 .catalog-filter-advanced-item {
   position: relative;
-  display: block;
+}
+
+.catalog-filter-advanced-item .absolute {
+  position: absolute;
+  margin-top: 5px;
+  padding: 7px 9px;
+  background-color: #fff;
+  min-width: 79px;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  z-index: 3;
+}
+
+.catalog-filter-advanced-item .absolute fieldset {
+  outline: none;
+  border: none;
+  padding-bottom: 6px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6F6E6E;
+}
+
+.catalog-filter-advanced-item .absolute input[type=checkbox] {
+  opacity: 0.3;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.catalog-filter-advanced-item .absolute input[type=checkbox]:checked {
+  opacity: 1;
+}
+
+.catalog-filter-advanced-item .absolute--size input {
+  margin-right: 9px;
+  line-height: 18px;
+  color: #EBEBEB;
+}
+
+.catalog-filter-advanced-item .absolute--price input {
+  width: 80px;
+  margin-bottom: 6px;
+  line-height: 16px;
+  color: #6F6E6E;
 }
 
 .catalog-footer {

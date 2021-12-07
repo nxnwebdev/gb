@@ -169,7 +169,11 @@
                         <li class="catalog-filter-advanced-item" >
                             <details class="">
                                 <summary>TRENDING NOW</summary>
-                                filter2.1
+                               <div class="absolute absolute--trending">
+                                   <label for="trandingNow">Yes</label>
+                                   <input id="trandingNow" type="checkbox">
+                                   
+                               </div>
                               </details>
 
                             
@@ -177,14 +181,38 @@
                         <li class="catalog-filter-advanced-item">
                             <details class="">
                                 <summary>SIZE</summary>
-                                filter2.2
+                                <div class="absolute absolute--size">
+                                    <fieldset>
+                                    <input id="xs" type="checkbox">
+                                    <label for="xs">XS</label>
+                                </fieldset>
+                                    <fieldset>
+                                    <input id="s" type="checkbox">
+                                    <label for="s">S</label>
+                                </fieldset>
+                                    <fieldset>
+                                    <input id="m" type="checkbox">
+                                    <label for="m">M</label>
+                                </fieldset>
+                                    <fieldset>
+                                    <input id="l" type="checkbox">
+                                    <label for="l">L</label>
+                                </fieldset>    
+                                </div>
                               </details>
 
                         </li>
                         <li class="catalog-filter-advanced-item">
                             <details class="">
                                 <summary>PRICE</summary>
-                                filter2.3
+                                <div class="absolute absolute--price">
+                                   <fieldset>
+                                    <input id="priceFilterMin" min="1" max="9999"  type="number" placeholder="min">
+                                   
+                                    <input id="priceFilterMax" min="1" max="9999" type="number" placeholder="max">
+                                </fieldset>
+                                    
+                                </div>
                               </details>  
                         </li>
                     </ul>
