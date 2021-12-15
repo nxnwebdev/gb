@@ -5,6 +5,10 @@
     text-decoration: none;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .hidden {
     display: none;
 
@@ -18,5 +22,13 @@
     max-width: 1160px;
     padding: 0 10px;
     margin: 0 auto;
+
+    @media (max-width:$max_tablet) {
+        padding: 0 15px;
+    }
+
+    @media (max-width:$max_mobile) {
+        padding: 0 16px;
+    }
 
 }

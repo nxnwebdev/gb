@@ -4,6 +4,14 @@
     background-repeat: no-repeat;
     background-size: 100%;
     height: 448px;
+    background-size: cover;
+
+    @media(max-width:$max_tablet) {
+        height: 100%;
+
+
+
+    }
 }
 
 .subscribe-opacity {
@@ -16,6 +24,14 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    @media(max-width:$max_tablet) {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 64px 0 140px 0;
+
+    }
 }
 
 .subscribe-left {
@@ -43,6 +59,12 @@
     max-width: 557px;
     text-align: center;
     margin-right: 90px;
+
+    @media(max-width:$max_tablet) {
+        margin: 0;
+
+    }
+
 }
 
 .subcribe-title {
@@ -67,6 +89,10 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
+
+    @media(max-width:$max_mobile) {
+        width: 90%;
+    }
 
 }
 

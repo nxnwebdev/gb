@@ -1,7 +1,7 @@
 .header {
     &__menu {
 
-        z-index: -1;
+
         position: absolute;
         top: 73px;
         right: 0;
@@ -10,8 +10,10 @@
         background: #FFFFFF;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         overflow-y: auto;
-        opacity: 0;
+
+        transform: translateX(100%);
         transition: 1s ease;
+
 
 
         &-wrapper {

@@ -1,11 +1,20 @@
 .fetured-items-row {
     margin-top: 96px;
 
+    @media (max-width:$max_tablet) {
+        margin-top: 154px;
+    }
+
 }
 
 .fetured-items-card-img-wrapper {
     width: 100%;
     position: relative;
+}
+
+.fetured-items-card-img {
+    width: 100%;
+
 }
 
 .fetured-items-card-btn {
@@ -45,6 +54,10 @@
 .fetured-items-title-wrapper {
     margin-bottom: 48px;
     text-align: center;
+
+    @media (max-width:$max_tablet) {
+        margin-bottom: 72px;
+    }
 }
 
 
@@ -77,14 +90,40 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media(max-width:$max_tablet) {
+        justify-content: center;
+    }
+
+    @media(max-width:$max_mobile) {
+        justify-content: center;
+    }
+
 }
 
 .fetured-items-card-item {
-    width: 360px;
-    height: 582px;
+    width: 32%;
+
     background-color: #F8F8F8;
     margin-bottom: 30px;
     box-sizing: border-box;
+
+
+
+    @media(max-width:$max_tablet) {
+        width: 360px;
+
+        &:nth-child(even) {
+            margin-left: 16px;
+        }
+    }
+
+    @media(max-width:$max_mobile) {
+        width: 360px;
+
+        &:nth-child(even) {
+            margin-left: 0;
+        }
+    }
 }
 
 .fetured-items-card-title-wrapper {

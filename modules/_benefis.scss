@@ -2,6 +2,11 @@
     margin-top: 95px;
     background: #222224;
     max-height: 341px;
+
+    @media (max-width:$max_tablet) {
+        max-height: 100%;
+
+    }
 }
 
 .benefits-wrapper {
@@ -10,11 +15,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width:$max_tablet) {
+        flex-direction: column;
+        padding: 0 0 64px 0;
+        max-height: 100%;
+    }
 }
 
 .benefits-item {
     max-width: 360px;
     text-align: center;
+
+    @media(max-width:$max_tablet) {
+        padding-top: 48px;
+
+    }
 
 
 }
