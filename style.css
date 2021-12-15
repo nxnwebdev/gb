@@ -148,6 +148,7 @@ body {
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   overflow-y: auto;
+  z-index: 3;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: 1s ease;
@@ -551,6 +552,9 @@ body {
   .fetured-items-card-item {
     width: 360px;
   }
+  .fetured-items-card-item:nth-child(9) {
+    display: none;
+  }
   .fetured-items-card-item:nth-child(even) {
     margin-left: 16px;
   }
@@ -913,8 +917,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 60px 0;
+  padding: 60px 16px;
   text-transform: uppercase;
+}
+
+@media (max-width: 667px) {
+  .top-head-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 24px 0 46px;
+  }
 }
 
 .top-head-title {
@@ -928,6 +942,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+}
+
+@media (max-width: 667px) {
+  .top-head-breadcrumbs {
+    margin-top: 24px;
+  }
 }
 
 .top-head-breadcrumbs-item a {
@@ -955,12 +975,22 @@ body {
   display: flex;
 }
 
+@media (max-width: 1024px) {
+  .catalog-header-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 details summary {
   list-style: none;
 }
 
 .catalog-filter-main {
-  width: 360px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   position: absolute;
   z-index: 1;
   -webkit-box-sizing: border-box;
@@ -974,12 +1004,19 @@ details summary {
   background-color: #fff;
   top: -10px;
   padding: 10px 17px;
+  width: 360px;
 }
 
 .catalog-filter-main summary {
   text-transform: uppercase;
   font-weight: bolder;
   cursor: pointer;
+}
+
+@media (max-width: 667px) {
+  .catalog-filter-main-title span {
+    display: none;
+  }
 }
 
 .catalog-filter-main[open] .catalog-filter-main-title {
@@ -995,6 +1032,13 @@ details summary {
   content: url(img/catalog/filter_main.svg);
   padding-right: 10px;
   padding-left: 5px;
+}
+
+@media (max-width: 667px) {
+  .catalog-filter-main-title:after {
+    padding: 0;
+    content: url(img/catalog/filter_main_mobile.svg);
+  }
 }
 
 .catalog-filter-main-title-cat {
@@ -1054,6 +1098,21 @@ details summary {
   margin: 0 auto;
   list-style: none;
   cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .catalog-filter-advanced {
+    margin: 0;
+  }
+}
+
+@media (max-width: 667px) {
+  .catalog-filter-advanced {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #6F6E6E;
+  }
 }
 
 .catalog-filter-advanced-item summary::after {

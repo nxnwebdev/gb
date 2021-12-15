@@ -6,8 +6,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 0;
+    padding: 60px 16px;
     text-transform: uppercase;
+
+    @media(max-width:$max_mobile) {
+        flex-direction: column;
+        padding: 24px 0 46px;
+
+    }
+
 }
 
 .top-head-title {
@@ -16,11 +23,17 @@
     line-height: 29px;
     color: #F16D7F;
 
+    @media(max-width:$max_mobile) {}
+
 }
 
 .top-head-breadcrumbs {
     display: flex;
     list-style: none;
+
+    @media(max-width:$max_mobile) {
+        margin-top: 24px;
+    }
 }
 
 .top-head-breadcrumbs-item a {

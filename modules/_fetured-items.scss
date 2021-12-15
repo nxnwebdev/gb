@@ -112,6 +112,10 @@
     @media(max-width:$max_tablet) {
         width: 360px;
 
+        &:nth-child(9) {
+            display: none;
+        }
+
         &:nth-child(even) {
             margin-left: 16px;
         }

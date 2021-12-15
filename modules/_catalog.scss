@@ -3,6 +3,10 @@
     padding: 50px 0px 64px;
     display: flex;
 
+    @media(max-width:$max_tablet) {
+        justify-content: space-between;
+    }
+
 }
 
 details summary {
@@ -13,7 +17,7 @@ details summary {
 
 .catalog-filter-main {
 
-    width: 360px;
+    width: max-content;
     position: absolute;
     z-index: 1;
     box-sizing: border-box;
@@ -27,6 +31,7 @@ details summary {
     background-color: #fff;
     top: -10px;
     padding: 10px 17px;
+    width: 360px;
 
 }
 
@@ -37,7 +42,15 @@ details summary {
 
 }
 
+.catalog-filter-main-title {
+    & span {
+        @media(max-width:$max_mobile) {
+            display: none;
 
+        }
+    }
+
+}
 
 .catalog-filter-main[open] .catalog-filter-main-title {
 
@@ -56,6 +69,11 @@ details summary {
     content: url(img/catalog/filter_main.svg);
     padding-right: 10px;
     padding-left: 5px;
+
+    @media(max-width:$max_mobile) {
+        padding: 0;
+        content: url(img/catalog/filter_main_mobile.svg);
+    }
 
 }
 
@@ -113,6 +131,18 @@ details summary {
     margin: 0 auto;
     list-style: none;
     cursor: pointer;
+
+    @media(max-width:$max_tablet) {
+        margin: 0;
+    }
+
+    @media(max-width:$max_mobile) {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #6F6E6E;
+
+    }
 
 
 }
