@@ -1,0 +1,180 @@
+.top-product-row {
+    padding: 128px 0;
+
+    @media(max-width:$max_mobile) {
+        padding: 64px 0;
+    }
+
+    & .fetured-items-card-item {
+        @media(max-width:$max_tablet) {
+            &:nth-child(3) {
+                display: none;
+            }
+
+        }
+    }
+}
+
+.product-img-wrapper {
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    position: relative;
+
+
+}
+
+.product-img-item img {
+    max-height: 724px;
+}
+
+
+
+.product-wrapper {
+    position: relative;
+}
+
+.product-slide-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+
+}
+
+.product-slide-btn {
+    width: 47px;
+    height: 47px;
+    background-color: rgba(42, 42, 42, 0.15);
+    color: #000;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+
+
+    &.right {
+        &::after {
+
+            content: url(img/product/slide_right.svg);
+
+        }
+
+        &:hover {
+            &::after {
+
+                content: url(img/product/slide_right_active.svg);
+
+            }
+        }
+    }
+
+    &.left {
+        &::before {
+            content: url(img/product/slide_left.svg);
+
+        }
+
+        &:hover {
+            &::before {
+
+                content: url(img/product/slide_left_active.svg);
+
+            }
+        }
+    }
+
+}
+
+.product-desc-row {
+    position: relative;
+    margin-top: -54px;
+    border: 1px solid #EAEAEA;
+    background-color: #fff;
+
+}
+
+.product-desc-wrapper {
+    padding: 64px 0;
+    max-width: 642px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.product-category {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+}
+
+.product-category:after {
+    display: block;
+    content: '';
+    border-bottom: 3px solid #F16D7F;
+    width: 63px;
+    margin: 12px auto;
+}
+
+.product-namme {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    margin-bottom: 48px;
+}
+
+.product-description {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-bottom: 32px;
+    color: #5E5E5E;
+}
+
+.product-price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 64px;
+    color: #EF5B70;
+}
+
+.product-desc-wrapper hr {
+    border: 1px solid rgba(234, 234, 234, 1);
+    margin-bottom: 64px;
+}
+
+.product-purcharse-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & summary {
+        @media(max-width:$max_mobile) {
+            width: max-content;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 12px;
+
+            /* identical to box height */
+
+            color: #6F6E6E;
+        }
+    }
+}
+
+.product .catalog-filter-advanced {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #6F6E6E;
+}

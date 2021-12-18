@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
-    <title>Shop - Main Page</title>
+    <title>Shop - Registration Page</title>
 </head>
 
 <body>
@@ -75,175 +75,67 @@
         </div>
       
     </header>
-
     <main>
-        <section class="promo-row">
-            <div class="promo-wrapper container">
-                <div class="promo-title">
-                    <h1 class="promo-title-h1">
-                        THE BRAND
-                    <span class="promo-subtitle-h1">
-                        OF LUXERIOUS <span class="promo-subtitle-h1-pink">FASHION</span>
-                    </span>
-                    
-                    </h1>
-                </div>
-            </div>
-        </section>
-        <section class="categories-wall-row">
-            <div class="categories-wall-wrapper container">
-                <div class="categories-wall-item" style="background-image: url(img/cat-wall-1.png);">
-                    <div class="categories-wall-item-shadow">
-                        <p class="categories-wall-item-subtitle">30% OFF</p>
-                        <h2 class="categories-wall-item-title">FOR WOMEN</h2>
-                    </div>
-                </div>
-                <div class="categories-wall-item" style="background-image: url(img/cat-wall-2.png);">
-                    <div class="categories-wall-item-shadow">
-                        <p class="categories-wall-item-subtitle">HOT DEAL</p>
-                        <h2 class="categories-wall-item-title">FOR MEN</h2>
-                    </div>
-
-                </div>
-                <div class="categories-wall-item" style="background-image: url(img/cat-wall-3.png);">
-                    <div class="categories-wall-item-shadow">
-                        <p class="categories-wall-item-subtitle">NEW ARRIVALS </p>
-                        <h2 class="categories-wall-item-title">FOR KIDS</h2>
-                    </div>
-
-                </div>
-                <div class="categories-wall-item" style="background-image: url(img/cat-wall-4.png);">
-                    <div class="categories-wall-item-shadow">
-                        <p class="categories-wall-item-subtitle">LUXIROUS & TRENDY</p>
-                        <h2 class="categories-wall-item-title">ACCESORIES</h2>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <section class="fetured-items-row ">
-
-            <div class="container">
-                <header class="fetured-items-title-wrapper">
-                    <h3 class="fetured-items-title">Fetured Items</h3>
-                    <p class="fetured-items-subtitle">Shop for items based on what we featured in this week</p>
-                </header>
+        <div class="top-head-row">
+            <div class="top-head-wrapper container">
+                <h1 class="top-head-title">SHOPPING CART</h1>
                
+            </div>
+        </div>
+
+<section class="registration">
+
+    <div class="registration__wrapper container">
+        <div class="registration__form">
+
+            <form action="">
+                <fieldset class="your-name">
+                    <legend>Your Name</legend>
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                      
+                    </fieldset>
+                    <fieldset class="male">
+                        <label for="regMale">
+                            <input id="regMale" name="reg_male" type="radio">Male</label>
+                        <label for="regFemale">
+                            <input id="regFemale" name="reg_male" type="radio">Female</label>
+                        <label for="regOther" class="hidden visible-m visible-t">
+                            <input id="regOther" name="reg_male" type="radio">Other</label>
+                    </fieldset>
 
 
-                <div class="fetured-items-card-wrapper">
-                    <article class="fetured-items-card-item">
-                        <div class="fetured-items-card-img-wrapper">
-                            <div class="fetured-items-card-img-layer">
-                                <button title="Add to Cart" class="fetured-items-card-btn">Add to Cart</button>
-                            </div>
-                            <img src="img/card-item-1.png" alt="ELLERY X M'O CAPSULE" class="fetured-items-card-img">
-                        </div>
-                        <div class="fetured-items-card-title-wrapper">
-                            <h4 class="fetured-items-card-title">ELLERY X M'O CAPSULE</h4>
-                            <p class="fetured-items-card-description">Known for her sculptural takes on traditional
-                                tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="fetured-items-card-price">$52.00</p>
-                        </div>
-                       
-                    </article>
-                    <article class="fetured-items-card-item">
-                        <div class="fetured-items-card-img-wrapper">
-                            <div class="fetured-items-card-img-layer">
-                                <button title="Add to Cart" class="fetured-items-card-btn">Add to Cart</button>
-                            </div>
-                            <img src="img/card-item-2.png" alt="ELLERY X M'O CAPSULE" class="fetured-items-card-img">
-                        </div>
-                        <div class="fetured-items-card-title-wrapper">  <h4 class="fetured-items-card-title">ELLERY X M'O CAPSULE</h4>
-                            <p class="fetured-items-card-description">Known for her sculptural takes on traditional
-                                tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="fetured-items-card-price">$52.00</p></div>
-                      
-                    </article>
-                    <article class="fetured-items-card-item">
-                        <div class="fetured-items-card-img-wrapper">
-                            <div class="fetured-items-card-img-layer">
-                                <button title="Add to Cart" class="fetured-items-card-btn">Add to Cart</button>
-                            </div>
-                            <img src="img/card-item-3.png" alt="ELLERY X M'O CAPSULE" class="fetured-items-card-img">
-                        </div>
-                        
-                        <div class="fetured-items-card-title-wrapper"><h4 class="fetured-items-card-title">ELLERY X M'O CAPSULE</h4>
-                            <p class="fetured-items-card-description">Known for her sculptural takes on traditional
-                                tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="fetured-items-card-price">$52.00</p></div>
-                        
-                    </article>
-                    
-                    <article class="fetured-items-card-item">
-                        <div class="fetured-items-card-img-wrapper">
-                            <div class="fetured-items-card-img-layer">
-                                <button title="Add to Cart" class="fetured-items-card-btn">Add to Cart</button>
-                            </div>
-                            <img src="img/card-item-4.png" alt="ELLERY X M'O CAPSULE" class="fetured-items-card-img">
-                        </div>
-                        <div class="fetured-items-card-title-wrapper">
-                            <h4 class="fetured-items-card-title">ELLERY X M'O CAPSULE</h4>
-                            <p class="fetured-items-card-description">Known for her sculptural takes on traditional
-                                tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="fetured-items-card-price">$52.00</p>
-                        </div>
-                      
-                    </article>
-                    <article class="fetured-items-card-item">
-                        <div class="fetured-items-card-img-wrapper">
-                            <div class="fetured-items-card-img-layer">
-                                <button title="Add to Cart" class="fetured-items-card-btn">Add to Cart</button>
-                            </div>
-                            <img src="img/card-item-5.png" alt="ELLERY X M'O CAPSULE" class="fetured-items-card-img">
-                        </div>
-                       
-                        <div class="fetured-items-card-title-wrapper">
-                            <h4 class="fetured-items-card-title">ELLERY X M'O CAPSULE</h4>
-                            <p class="fetured-items-card-description">Known for her sculptural takes on traditional
-                                tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="fetured-items-card-price">$52.00</p>
-                        </div>
-                       
-                    </article>
-                    <article class="fetured-items-card-item">
-                        <div class="fetured-items-card-img-wrapper">
-                            <div class="fetured-items-card-img-layer">
-                                <button title="Add to Cart" class="fetured-items-card-btn">Add to Cart</button>
-                            </div>
-                            <img src="img/card-item-6.png" alt="ELLERY X M'O CAPSULE" class="fetured-items-card-img">
-                        </div>
-                        
-                        <div class="fetured-items-card-title-wrapper">
-                            <h4 class="fetured-items-card-title">ELLERY X M'O CAPSULE</h4>
-                            <p class="fetured-items-card-description">Known for her sculptural takes on traditional
-                                tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="fetured-items-card-price">$52.00</p>
-                        </div>
-                      
-                    </article>
-                </div>
-                <footer class="fetured-items-footer">
-                    <a href="#" class="fetured-items-footer-btn">Browse All Product</a>
-                </footer>
-            </div>
-        </section>
-        <section class="benefits-row">
-            <div class="benefits-wrapper container">
-                <div class="benefits-item">
-                    <h3 class="benefits-title">Free Delivery</h3>
-                    <p class="benefits-desc">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                </div>
-                <div class="benefits-item">
-                    <h3 class="benefits-title">Sales & discounts</h3>
-                    <p class="benefits-desc">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                </div>
-                <div class="benefits-item">
-                    <h3 class="benefits-title">Quality assurance</h3>
-                    <p class="benefits-desc">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                </div>
-            </div>
-        </section>
+                    <fieldset class="login-details">
+                        <legend>Login details</legend>
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <p class="notification">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                            <button type="submit">JOIN NOW<img src="/img/join.svg" alt="join now"></button>
+                            
+                        </fieldset>
+                  
+            </form>
+
+        </div>
+        <div class="registration__info">
+            <h2>LOYALTY HAS ITS PERKS</h2>
+            <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            <ul>
+                <li>15% off welcome offer
+                </li>
+                <li>Free shipping, returns and exchanges on all orders
+
+                </li>
+                <li>$10 off a purchase on your birthday
+
+                </li>
+                <li>Early access to products</li>
+                <li>Exclusive offers & rewards</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
         <section class="subscribe-row">
             <div class="subscribe-opacity">
             <div class="subscribe-wrapper container">
@@ -266,6 +158,7 @@
             </div>
         </div>
         </section>
+
     </main>
     <footer class="footer-row">
         <div class="footer-wrapper container">

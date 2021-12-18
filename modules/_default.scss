@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+    text-decoration: none;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.hidden {
+    display: none;
+
+}
+
+.show {
+    display: block;
+}
+
+.container {
+    max-width: 1160px;
+    padding: 0 10px;
+    margin: 0 auto;
+
+    @media (max-width:$max_tablet) {
+        padding: 0 15px;
+    }
+
+    @media (max-width:$max_mobile) {
+        padding: 0 9px;
+    }
+
+}
+
+.visible-t {
+    @media (max-width:$max_tablet) {
+        display: inline-block;
+    }
+}
+
+.visible-m {
+    @media (max-width:$max_mobile) {
+        display: inline-block;
+    }
+}
