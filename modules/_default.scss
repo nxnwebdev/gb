@@ -3,6 +3,7 @@
     padding: 0;
     font-family: lato;
     text-decoration: none;
+
 }
 
 body {
@@ -28,7 +29,7 @@ body {
     }
 
     @media (max-width:$max_mobile) {
-        padding: 0 16px;
+        padding: 0 9px;
     }
 
 }
