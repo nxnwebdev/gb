@@ -1,8 +1,9 @@
 .top-head-row {
     background-color: #F8F3F4;
+    height: 148px;
 
     @media(max-width:$max_mobile) {
-        height: 148px;
+
         display: flex;
         align-items: center;
     }

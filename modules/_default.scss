@@ -33,3 +33,15 @@ body {
     }
 
 }
+
+.visible-t {
+    @media (max-width:$max_tablet) {
+        display: inline-block;
+    }
+}
+
+.visible-m {
+    @media (max-width:$max_mobile) {
+        display: inline-block;
+    }
+}

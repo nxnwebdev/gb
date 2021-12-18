@@ -35,6 +35,18 @@ body {
   }
 }
 
+@media (max-width: 1024px) {
+  .visible-t {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 667px) {
+  .visible-m {
+    display: inline-block;
+  }
+}
+
 .header-row {
   background-color: #222;
   padding: 16px 0;
@@ -905,11 +917,11 @@ body {
 
 .top-head-row {
   background-color: #F8F3F4;
+  height: 148px;
 }
 
 @media (max-width: 667px) {
   .top-head-row {
-    height: 148px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1814,6 +1826,12 @@ details summary {
   padding: 64px 0 96px;
 }
 
+@media (max-width: 667px) {
+  .registration {
+    padding-top: 40px;
+  }
+}
+
 .registration__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1826,8 +1844,29 @@ details summary {
           align-items: flex-start;
 }
 
+@media (max-width: 667px) {
+  .registration__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .registration__form {
   width: 360px;
+}
+
+@media (max-width: 1024px) {
+  .registration__form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 667px) {
+  .registration__form {
+    width: 100%;
+  }
 }
 
 .registration__form form ::-webkit-input-placeholder {
@@ -1872,6 +1911,8 @@ details summary {
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .registration__form form .your-name button,
@@ -1931,6 +1972,21 @@ details summary {
   width: 652px;
 }
 
+@media (max-width: 1024px) {
+  .registration__info {
+    width: 50%;
+    margin-left: 22px;
+  }
+}
+
+@media (max-width: 667px) {
+  .registration__info {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+}
+
 .registration__info h2,
 .registration__info p,
 .registration__info li {
@@ -1939,6 +1995,22 @@ details summary {
   line-height: 29px;
   color: #000000;
   padding-bottom: 16px;
+}
+
+@media (max-width: 1024px) {
+  .registration__info h2,
+  .registration__info p,
+  .registration__info li {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.registration__info li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .registration__info li:before {

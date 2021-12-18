@@ -1,14 +1,31 @@
 .registration {
     padding: 64px 0 96px;
 
+    @media(max-width:$max_mobile) {
+        padding-top: 40px;
+    }
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+
+        @media(max-width:$max_mobile) {
+            flex-direction: column;
+        }
+
     }
 
     &__form {
         width: 360px;
+
+        @media(max-width:$max_tablet) {
+            width: 50%;
+        }
+
+        @media(max-width:$max_mobile) {
+            width: 100%;
+        }
 
         form {
             ::-webkit-input-placeholder {
@@ -53,6 +70,7 @@
                     font-weight: 300;
                     font-size: 13px;
                     line-height: 16px;
+                    box-sizing: border-box;
                 }
 
                 button {
@@ -118,6 +136,17 @@
     &__info {
         width: 652px;
 
+        @media(max-width:$max_tablet) {
+            width: 50%;
+            margin-left: 22px;
+        }
+
+        @media(max-width:$max_mobile) {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 40px;
+        }
+
         h2,
         p,
         li {
@@ -128,9 +157,21 @@
             padding-bottom: 16px;
 
 
+            @media (max-width:$max_tablet) {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            @media (max-width:$max_mobile) {}
+
+
         }
 
         li {
+            display: flex;
+
+
             &:before {
                 content: url(img/v.svg);
                 width: 20px;
@@ -164,8 +205,7 @@
 
 
         h2,
-        p,
-            {
+        p {
             padding-bottom: 21px;
 
         }
