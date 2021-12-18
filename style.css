@@ -917,7 +917,7 @@ body {
 
 .top-head-row {
   background-color: #F8F3F4;
-  height: 148px;
+  min-height: 148px;
 }
 
 @media (max-width: 667px) {
